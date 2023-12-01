@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import './Login.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 
 function Signup() {
+    const navigate = useNavigate();
+
     const [values, setValues] = useState({
         firstname:'',
         lastname:'',
@@ -14,7 +16,13 @@ function Signup() {
     })
     const handleUser =(event) =>{
         event.preventDefault();
-        axios.post('http://localhost:3000/users')
+        axios.post('http://localhost:3000/users/',values)
+        .then(res => {
+            console.log(res);
+            navigate('/')
+        })
+        .catch(err => console.log(err));
+
 
     }
     return ( 
@@ -24,15 +32,18 @@ function Signup() {
             <form onSubmit={handleUser}>
                 <div class="form-group">
                 <label for="exampleInputEmail1">First Name</label>
-                <input type="text" class="form-control"  placeholder="First Name" />
+                <input type="text" class="form-control"  placeholder="First Name" 
+                onchange = {e => setValues({...values, firstname: e.target.values})}/>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputEmail1">Last Name</label>
-                <input type="text" class="form-control" placeholder="Last Name" />
+                <input type="text" class="form-control" placeholder="Last Name" 
+                onchange = {e => setValues({...values, lastname: e.target.values})}/>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" />
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" 
+                onchange = {e => setValues({...values, email: e.target.values})}/>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
