@@ -1,0 +1,36 @@
+{
+    "users":[
+  {
+      "id":1,
+      "firstname":"Felix",
+      "lastname":"Erotu",
+      "email":"felix@gmail.com",
+      "phone":"1-364-2874"
+  },
+  {
+      "id":2,
+      "firstname":"Lios",
+      "lastname":"Atwiine",
+      "email":"lios@gmail.com",
+      "phone":"44-364-3009"
+      
+  },
+  {
+      "id":3,
+      "firstname":"Patricia",
+      "lastname":"Akiding",
+      "email":"patricia@gmail.com",
+      "phone":"1-223-9091"
+     
+  },
+  {
+      "id":4,
+      "firstname":"Mark Elvis",
+      "lastname":"Otim",
+      "email":"elvis@gmail.com",
+      "phone":"1-364-4646"
+      
+  }
+
+]
+}
