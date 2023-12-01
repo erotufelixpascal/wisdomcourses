@@ -12,7 +12,8 @@ function Signup() {
         firstname:'',
         lastname:'',
         email:'',
-        phone:''
+        phone:'',
+        password:''
     })
     const handleUser =(event) =>{
         event.preventDefault();
@@ -47,7 +48,8 @@ function Signup() {
                 </div>
                 <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" 
+                onChange = {e => setValues({...values, password: e.target.value})}/>
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
                 <Link to='/' type="button" class="btn btn-primary ms-3">Back</Link>

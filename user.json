@@ -5,6 +5,7 @@
       "firstname": "Felix",
       "lastname": "Erotu",
       "email": "felix@gmail.com",
+      "password": "Test1234",
       "phone": "1-364-2874"
     },
     {
@@ -12,6 +13,7 @@
       "firstname": "Lios",
       "lastname": "Atwiine",
       "email": "lios@gmail.com",
+      "password": "Test1234",
       "phone": "44-364-3009"
     },
     {
@@ -19,6 +21,7 @@
       "firstname": "Patricia",
       "lastname": "Akiding",
       "email": "patricia@gmail.com",
+      "password": "Test1234",
       "phone": "1-223-9091"
     },
     {
@@ -26,14 +29,24 @@
       "firstname": "Mark Elvis",
       "lastname": "Otim",
       "email": "elvis@gmail.com",
-      "phone": "1-364-4646"
+      "phone": "1-364-4646",
+      "password": "Test1234"
     },
     {
       "firstname": "Babra",
       "lastname": "Atim",
       "email": "atim@gmail.com",
       "phone": "",
+      "password": "Test1234",
       "id": 5
+    },
+    {
+      "firstname": "Ronaldo",
+      "lastname": "Messi",
+      "email": "messi@gmail.com",
+      "phone": "",
+      "password": "Test1234",
+      "id": 6
     }
   ]
 }
