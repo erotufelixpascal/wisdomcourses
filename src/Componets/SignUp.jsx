@@ -26,8 +26,8 @@ function Signup() {
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></input>
                 </div>
-                <Link to='/' type="submit" class="btn btn-primary">Login</Link>
-                <Link to='/login' type="button" class="btn btn-primary ms-3">Back</Link>
+                <Link to='/home' type="submit" class="btn btn-primary">Login</Link>
+                <Link to='/' type="button" class="btn btn-primary ms-3">Back</Link>
                                 
                 
             </form>
