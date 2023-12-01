@@ -7,7 +7,7 @@ function Home() {
         <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebSiteName</a>
+            <a class="navbar-brand" href="#">Wisdom Courses</a>
             </div>
             <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
@@ -26,7 +26,7 @@ function Home() {
           <li><a href="#">JavaScript</a></li>
         </ul>
       </div> */}
-      
+
       </div>
      );
 }
