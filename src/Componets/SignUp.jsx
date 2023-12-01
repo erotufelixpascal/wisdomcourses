@@ -32,18 +32,18 @@ function Signup() {
             <form onSubmit={handleUser}>
                 <div class="form-group">
                 <label for="exampleInputEmail1">First Name</label>
-                <input type="text" class="form-control"  placeholder="First Name" 
-                onchange = {e => setValues({...values, firstname: e.target.values})}/>
+                <input type="text" class='form-control' name='First Name' placeholder='First Name' 
+                onChange = {e => setValues({...values, firstname: e.target.value})}/>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputEmail1">Last Name</label>
                 <input type="text" class="form-control" placeholder="Last Name" 
-                onchange = {e => setValues({...values, lastname: e.target.values})}/>
+                onChange = {e => setValues({...values, lastname: e.target.value})}/>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" 
-                onchange = {e => setValues({...values, email: e.target.values})}/>
+                onChange = {e => setValues({...values, email: e.target.value})}/>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
