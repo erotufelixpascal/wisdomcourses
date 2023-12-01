@@ -13,6 +13,7 @@ function Signup() {
         lastname:'',
         email:'',
         phone:'',
+        role:'',
         password:''
     })
     const handleUser =(event) =>{
@@ -45,6 +46,20 @@ function Signup() {
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" 
                 onChange = {e => setValues({...values, email: e.target.value})}/>
+                </div>
+                {/* <div class="form-group">
+                <label for="exampleInputPassword1">Role</label>
+                <input type="text" class="form-control" placeholder="Particpant or Supervisor" 
+                onChange = {e => setValues({...values, role: e.target.value})}/>
+                </div> */}
+                <div class="form-group">
+                    <label for="sel1">Select Role (select one):</label>
+                    <select class="form-control" id="sel1" onChange = {e => setValues({...values, role: e.target.value})}>
+                        <option>Participant</option>
+                        <option>Supervisor</option>
+                        <option>Instructor</option>
+                        
+                    </select>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>

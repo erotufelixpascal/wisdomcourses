@@ -6,7 +6,8 @@
       "lastname": "Erotu",
       "email": "felix@gmail.com",
       "password": "Test1234",
-      "phone": "1-364-2874"
+      "role": "Participant",
+      "phone": "55-364-2874"
     },
     {
       "id": 2,
@@ -14,6 +15,7 @@
       "lastname": "Atwiine",
       "email": "lios@gmail.com",
       "password": "Test1234",
+      "role": "Supervisor",
       "phone": "44-364-3009"
     },
     {
@@ -22,6 +24,7 @@
       "lastname": "Akiding",
       "email": "patricia@gmail.com",
       "password": "Test1234",
+      "role": "Participant",
       "phone": "1-223-9091"
     },
     {
@@ -29,14 +32,16 @@
       "firstname": "Mark Elvis",
       "lastname": "Otim",
       "email": "elvis@gmail.com",
-      "phone": "1-364-4646",
+      "phone": "1-364-4000",
+      "role": "Participant",
       "password": "Test1234"
     },
     {
       "firstname": "Babra",
       "lastname": "Atim",
       "email": "atim@gmail.com",
-      "phone": "",
+      "phone": "1-364-7609",
+      "role": "Participant",
       "password": "Test1234",
       "id": 5
     },
@@ -44,9 +49,19 @@
       "firstname": "Ronaldo",
       "lastname": "Messi",
       "email": "messi@gmail.com",
-      "phone": "",
+      "phone": "98-364-3030",
+      "role": "Instructor",
       "password": "Test1234",
       "id": 6
+    },
+    {
+      "firstname": "Felix Pascal",
+      "lastname": "Erotu",
+      "email": "erotufelixpascal2@gmail.com",
+      "phone": "",
+      "role": "Instructor",
+      "password": "testnew",
+      "id": 7
     }
   ]
 }
