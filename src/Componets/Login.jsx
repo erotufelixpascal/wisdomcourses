@@ -1,14 +1,20 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import './Login.css';
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import axios from "axios";
 
 function Login() {
+    const {id} = useParams([])
+    const handleLogin = (event) =>{
+        event.preventDefault();
+        axios.get('http://localhost:3000/users/' +id)
+    }
     return ( 
         <div class="back">
         <div class="div-center">
         <div class="content">
-            <form>
+            <form onSubmit={handleLogin}>
                 <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></input>
