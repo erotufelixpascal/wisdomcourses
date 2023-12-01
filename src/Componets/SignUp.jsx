@@ -2,14 +2,20 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import './Login.css';
 import { Link } from "react-router-dom";
+// import axios from 'axios';
 
 
 function Signup() {
+    const handleUser =(event) =>{
+        event.preventDefault();
+        // axios.post()
+
+    }
     return ( 
         <div class="back">
         <div class="div-center">
         <div class="content">
-            <form>
+            <form onSubmit={handleUser}>
                 <div class="form-group">
                 <label for="exampleInputEmail1">First Name</label>
                 <input type="text" class="form-control"  placeholder="First Name"></input>
@@ -26,7 +32,7 @@ function Signup() {
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></input>
                 </div>
-                <Link to='/home' type="submit" class="btn btn-primary">Login</Link>
+                <button type="submit" class="btn btn-primary">Login</button>
                 <Link to='/' type="button" class="btn btn-primary ms-3">Back</Link>
                                 
                 
