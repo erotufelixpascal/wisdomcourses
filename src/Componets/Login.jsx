@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import './Login.css';
+import { Link } from "react-router-dom";
 
 function Login() {
     return ( 
@@ -16,10 +17,10 @@ function Login() {
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></input>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <Link to='/' type="submit" class="btn btn-primary">Login</Link>
                 <hr />
-                <button type="button" class="btn btn-link">Signup</button>
-                <button type="button" class="btn btn-link">Reset Password</button>
+                <Link to='/signup' type="button" class="btn btn-primary">Signup</Link>
+                <button type="button" class="btn btn-primary ms-3">Reset Password</button>
             </form>
         </div>
         </div>
